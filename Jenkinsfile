@@ -6,6 +6,15 @@ pipeline {
     }
 
     stages {
+        stage('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
+        // other stages...
+    }
+
+    stages {
         stage('Checkout') {
             steps {
                 // Clone the repository
