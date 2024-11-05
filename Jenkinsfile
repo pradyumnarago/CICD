@@ -11,10 +11,6 @@ pipeline {
                 deleteDir()
             }
         }
-        // other stages...
-    }
-
-    stages {
         stage('Checkout') {
             steps {
                 // Clone the repository
