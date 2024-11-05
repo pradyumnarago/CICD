@@ -10,6 +10,8 @@ pipeline {
             steps {
                 // Clone the repository
                 git branch: 'main', url: 'https://github.com/pradyumnarago/CICD.git'
+                sh 'echo "Workspace directory: ${pwd()}"'
+
             }
         }
 
