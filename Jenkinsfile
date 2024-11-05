@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the repository
-                git 'https://github.com/CICD.git'
+                git 'https://github.com/pradyumnarago/CICD.git'
             }
         }
 
